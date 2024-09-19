@@ -17,7 +17,7 @@ int main(int argc, char** argv) {
 	
 	
     cam.aspect_ratio      = 16.0 / 9.0;
-    cam.image_width       = 1366;
+    cam.image_width       = 1280;
 	
     if (argc == 2)
 		cam.samples_per_pixel = std::stoi(argv[1]);
