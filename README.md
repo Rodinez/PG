@@ -44,9 +44,9 @@ _Para uma vizualização mais detalhada, aconselha-se consultar o arquivo raytra
 ---
 
 
-## _Webgl2_
+## _WebGL2_
 
-O nosso projeto de Webgl2 consiste na recriação de um personagem desenvolvido para um [Jogo](https://asteriskoobelisko.itch.io/umjogo-to-mal-feito-que-eu-fui-puxado-para-dentro-dele-e-no-sei-o-que-eu-estoufa) para a Maritacas Gamedev pelo integrante Leonardo Prado e um modelo de banana criado exclusivamente para esse trabalho (Ninguém sabe porquê, mas bananas são engraçadas).
+O nosso projeto de WebGL2 consiste na recriação de um personagem desenvolvido para um [Jogo](https://asteriskoobelisko.itch.io/umjogo-to-mal-feito-que-eu-fui-puxado-para-dentro-dele-e-no-sei-o-que-eu-estoufa) para a Maritacas Gamedev pelo integrante Leonardo Prado e um modelo de banana criado exclusivamente para esse trabalho (Ninguém sabe porquê, mas bananas são engraçadas).
 
 Para executar esse projeto é necessário abrir um terminal na pasta Webgl2 e digitar o seguinte comando:
 
