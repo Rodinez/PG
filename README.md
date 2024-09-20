@@ -6,26 +6,26 @@ Inicialmente, para compilar o programa, é necessário que se abra um terminal n
 
 Para gerar todos os frames dessa animação com o valor de 300 em cam.samples_per_pixel pode-se utilizar o seguinte comando:
 
-bash
-./raytracing.exe
+```bash
+./raytracing.exe```
 
 
 No entanto, a nossa implementação pode ser utilizada com argumentos a nível de linha de comando, com o programa podendo ser chamado das seguintes maneiras:
 
-bash
-./raytracing.exe 10
+```bash
+./raytracing.exe 10```
 
 
 Que setará o valor de cam.samples_per_pixel para o argumento passado, nesse caso 10. Ou:
 
-bash
-./raytracing.exe 100 115
+```bash
+./raytracing.exe 100 115```
 
 
 Que terá como saída os frames a partir do primeiro argumento até o segundo (não incluso) com o valor de cam.samples_per_pixel igual a 300. Nesse caso a saída seriam os frames 100 ao 114 da animação.
 
-bash
-./raytracing.exe 0 50 10
+```bash
+./raytracing.exe 0 50 10```
 
 
 Que terá como saída os frames a partir do primeiro argumento até o segundo (não incluso) com cam.samples_per_pixel igual ao terceiro argumento. Nesse caso o programa teria como saída os frames 0 ao 49 da animação com 10 de valor no cam.samples_per_pixel.
@@ -46,8 +46,8 @@ O nosso projeto de Webgl2 consiste na recriação de um personagem desenvolvido 
 
 Para executar esse projeto é necessário abrir um terminal na pasta Webgl2 e digitar o seguinte comando:
 
-bash
-python -m http.server 8000
+```bash
+python -m http.server 8000```
 
 
 Após isso, abra um navegador e acesse a página [localhost:8000](http://localhost:8000/) para visualizar o resultado.
