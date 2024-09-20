@@ -229,7 +229,7 @@ function subtraiVetores(a, b, vetorDestino) {
 }
 
 
-function escalaVetor(v, s, vetorDestino) {
+function escalaobj(v, s, vetorDestino) {
   vetorDestino = vetorDestino || new Float32Array(3);
   vetorDestino[0] = v[0] * s;
   vetorDestino[1] = v[1] * s;
@@ -718,9 +718,6 @@ for (const material2 of Object.values(materials2)) {
     };
   });
 
-  console.log(parts);
-  console.log(parts2); 
-
   
   
 
@@ -752,11 +749,11 @@ for (const material2 of Object.values(materials2)) {
   
   const extents = getGeometriesExtents(obj.geometries);
   const range = subtraiVetores(extents.max, extents.min);  
-  const objOffset = escalaVetor(somaVetores(extents.min,escalaVetor(range, 0.5)),-0.8);
+  const objOffset = escalaobj(somaVetores(extents.min,escalaobj(range, 0.5)),-0.8);
 
   const extents2 = getGeometriesExtents(obj2.geometries);
   const range2 = subtraiVetores(extents2.max, extents2.min);
-  const objOffset2 = escalaVetor(somaVetores(extents2.min,escalaVetor(range2, 0.5)),1);
+  const objOffset2 = escalaobj(somaVetores(extents2.min,escalaobj(range2, 0.5)),1);
 
 
 
