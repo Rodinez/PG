@@ -6,6 +6,12 @@
 #include "material.h"
 #include "sphere.h"
 
+//Desenvolvido por:
+//Fidel Cassio Santos Pereira - 813264
+//Gabriel Santos de Andrade - 815407
+//Jean Rodrigues Rocha - 813581
+//Leonardo Prado Silva - 813169
+
 
 int main(int argc, char** argv) {
     //cria um mundo e uma camera

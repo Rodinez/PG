@@ -1,3 +1,14 @@
+## Nomes
+
+### Fidel Cassio Santos Pereira - 813264
+
+### Gabriel Santos de Andrade - 815407
+
+### Jean Rodrigues Rocha - 813581
+
+### Leonardo Prado Silva - 813169
+
+
 ## _Ray Tracing_
 
 O nosso projeto de ray tracing consiste em 345 frames gerados para uma animação de bilhar, contendo 3 ângulos de câmeras diferentes no momento da colisão das bolas.

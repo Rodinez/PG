@@ -1,3 +1,12 @@
+
+
+//Desenvolvido por:
+//Fidel Cassio Santos Pereira - 813264
+//Gabriel Santos de Andrade - 815407
+//Jean Rodrigues Rocha - 813581
+//Leonardo Prado Silva - 813169
+
+
 "use strict";
 
 
