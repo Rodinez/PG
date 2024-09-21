@@ -97,7 +97,7 @@ Dessa forma, foi possível gerar os 345 frames sem muitas complicações. No fim
 
 ```bash
 ffmpeg -framerate 30 -start_number 0 -i "image%d.ppm" output.mp4
-ffmpeg -i output.mp4 -c:v libx264 -profile:v baseline -level 3.0 -pix_fmt yuv420p video.mp4
+ffmpeg -i output.mp4 -c:v libx264 -profile:v baseline -level 3.0 -pix_fmt yuv420p raytracing.mp4
 ```
 
 ---
