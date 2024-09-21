@@ -40,6 +40,7 @@ O resultado final está presente logo a baixo:
 
 _Para uma vizualização mais detalhada, aconselha-se consultar o arquivo raytracing.mp4 contido no diretório results_
 
+### Sobre a animação:
 
 A camera inicialmente está na posição (-15, 1, 0) olhando para o ponto (0, 0, 0);
 
@@ -61,7 +62,7 @@ Por fim, a camera é movida para a posição (4, 2.5, 0) para mostrar outra âng
 
 Os movimentos que as bolas fazem é o mesmo nessas 3 cenas.
 
-Sobre o WCS:
+### Sobre o WCS:
 
 - O centro do mundo é o (0, 0, 0);
 - O centro do triângulo com as 15 bolas está em (0, 1, 0), um pouco acima do centro do mundo;
@@ -84,9 +85,20 @@ Sobre o WCS:
   - As posições citadas aqui referem-se ao centro da esfera, sendo que todas as esferas tem raio 1.
 - Durante a animação, todas as bolas mudam de posição.
 
-
 Para essa animação, é conveniente que o triângulo com as bolas fique no centro do mundo, pois como ele é o foco, se a câmera continuar apontando apra (0, 0, 0) durante toda a animação não terá nenhum problema.
 
+### Sobre o código:
+
+O código base utilizado foi o sugerido na especificação do projeto ([Ray Tracing em um final de semana](https://raytracing.github.io/books/RayTracingInOneWeekend.html)), sendo que foi necessário fazer uma pequena alteração na função de renderização da camera.
+
+O código de renderização da camera foi modificado para receber um inteiro que vai indicar o número do frame, e agora, ao invés de imprimir os valores dos pixels no terminal, eles serão escritos em um arquivo com o nome "image_x", sendo x o número do frame recebido.
+
+Dessa forma, foi possível gerar os 345 frames sem muitas complicações. No fim, eles foram transformados em um vídeo usando o FFMPEG:
+
+```bash
+ffmpeg -framerate 30 -start_number 0 -i "image%d.ppm" output.mp4
+ffmpeg -i output.mp4 -c:v libx264 -profile:v baseline -level 3.0 -pix_fmt yuv420p video.mp4
+```
 
 ---
 
